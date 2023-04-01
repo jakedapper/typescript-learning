@@ -73,6 +73,7 @@ type Point = {
   y: number;
   z?: number;
 };
+//adding ? after z makes property optional to include
 
 const myPoint: Point = { x: 1, y: 3 };
 
@@ -80,6 +81,8 @@ type User = {
   readonly id: number;
   username: string;
 };
+
+// readonly - can only read id, can not write to it -- cant reassign value of property -  will see again in classees
 
 const user: User = {
   id: 12837,
