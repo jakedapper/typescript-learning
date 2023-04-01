@@ -10,7 +10,7 @@ function greet(person: string = "stranger"): string {
 //default parameter included above ^
 //we are declaring variable type AND return type
   //typescript can infer return type - aka not necessary - this annotation isis after our parameter annotations outside the parentheses
-  
+
 
 function square(num: number): number {
   return num * num;
@@ -32,12 +32,15 @@ colors.map((color) => {
 });
 
 // Void
+  // technically a value - i.e. undefined or null
 function printTwice(msg: string): void {
   console.log(msg);
   console.log(msg);
 }
 
 // Never
+  // use when a function should not ever return anything OR run continuously
+
 function makeError(msg: string): never {
   throw new Error(msg);
 }
