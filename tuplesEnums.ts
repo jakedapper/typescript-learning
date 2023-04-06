@@ -1,3 +1,5 @@
+// tuples are rigid arrays - types, format, length are set in stone
+
 // These are NOT tuples:
 // const stuff: (string | number)[] = [1,'asd', 'asdasd', 'asdasd', 2]
 // const color: number[] = [23,45,234,234]
@@ -14,6 +16,10 @@ const responses: HTTPResponse[] = [
   [404, "Not Found"],
   [200, "OK"],
 ];
+
+//enums are a set of constants
+//if no value is set to enum constants, typescript does it automatically starting with 0
+// we can give them numeric OR string values
 
 // Enum Example:
 enum OrderStatus {
